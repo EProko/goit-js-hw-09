@@ -3,16 +3,6 @@ const localStorageKey = 'feedback-form-state';
 const email = Form.elements.email;
 const textarea = Form.elements.message;
 
-// function saveInputValue() {
-//   const savedValue = localStorage.getItem(localStorageKey);
-//   if (savedValue) {
-//     const parsedValue = JSON.parse(savedValue);
-//     email.value = parsedValue.Email;
-//     textarea.value = parsedValue.Message;
-//   }
-// }
-// saveInputValue();
-
 document.addEventListener('DOMContentLoaded', () => {
   const savedValue = localStorage.getItem(localStorageKey);
   if (savedValue) {
